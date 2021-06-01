@@ -1,0 +1,211 @@
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin: 0;
+}
+body{
+	font-size: 1em;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Img/rsz_backgroundpic.png);
+	background-size: cover;
+	font-family: poppins;
+	background-position: top;
+}
+
+/*End of global*/
+
+
+/*Start*/
+.whole-container{
+	width:100%;
+	padding:2em;
+	position: relative;
+}
+
+header{
+	background-color: black;
+	padding-bottom: 1em;
+}
+.logo-box{
+	float: left;
+	margin-top:-0.47em;
+
+}
+.logo{
+	width: 3em;
+
+}
+.ul-container{
+	float: right;
+
+	top:-0.2em;
+}
+ul li a{
+	text-decoration: none;
+	color:white;
+}
+ul li{
+	display: inline;
+	margin: 0 1em;
+	list-style: none;
+	font-size: 0.8em;
+	padding:0.8em;
+	border-radius: 1em;
+	cursor:pointer;
+}
+ul li:link,:visited{
+	display: inline;
+	margin: 0 1em;
+	list-style: none;
+	font-size: 0.8em;
+}
+ul li:hover{
+	box-shadow:0 0.0613em 0.62em rgba(255, 255, 255, 0.5);
+	transform:translateY(-0.1857rem);
+
+}
+ul li:active{
+	transform:translateY(-0.0636);
+	box-shadow: 0 0.1236em 1.25em rgba(255, 255, 255, 0.5);
+}
+/*End of Header*/
+.content-container{
+	padding-bottom: 12.3em;
+}
+.top-content{
+text-align: center;
+margin-top: 112px;
+
+}
+.content-container h1{
+	color: #ffffff;
+	position: relative;
+	font-size: 1.4rem ;
+	text-transform: uppercase;
+	letter-spacing: 0.11em;
+	padding-bottom: 0.6em;
+}
+.top-content p{
+	color:#b7ad5a;
+	font-size: 0.7rem;	
+	letter-spacing: 0.18em;
+	word-spacing: 0.11em;
+	font-weight: 500;
+}
+/*End of Section*/
+footer{
+	background-color: black;
+	padding: 0 2em;
+	color:#ffffff;
+	position: absolute;
+	background:rgba(0, 0, 0, 0.5);
+}
+.footer-image{
+	width:3em;
+}
+.footer-paragraph{
+	font-size: 0.6rem;
+	color: #d0d2dc;
+	margin-bottom: 1em;
+}
+.footer-content{
+	padding:1em 1em;
+	border-right: 2px solid #ffffff;
+	float:left;
+	width:25%;
+	
+}
+.footer-content button{
+	font-size: 0.7rem;
+	
+	background-color: #b7ad5a;
+	color:#ffffff;
+	border-radius: 0.7em;
+	border: none;
+	outline:none;
+	padding:0.7em 1em;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.footer-content button:link, :visited{
+	
+	background-color: #b7ad5a;
+	color:#ffffff;
+	border-radius: 0.7em;
+	border: none;
+	outline:none;
+	cursor: pointer;
+}
+.footer-content button:hover{
+	transform:translateY(-0.1857rem);
+	box-shadow:  0 0.0613em 0.62em rgba(255, 255, 255, 0.5);
+}
+.footer-content button:active{
+	transform:translateY(-0.0636);
+	box-shadow: 0 0.1236em 1.25em rgba(255, 255, 255, 0.5);
+}
+h2{
+	font-size: 0.9rem;
+	text-transform: capitalize;
+	font-weight: 600;
+	padding-bottom: 1em;
+	letter-spacing: 0.022rem;
+}
+.footer-content-four{
+	border-right: none;
+}
+/*End of Footer*/
+
+/*Media queries*/
+
+@media only screen and (max-width: 900px){
+	:root{
+		font-size: 0.8em;
+	}
+	body{
+		background-image:initial;
+		background-color: none;
+	}
+	.footer-content{
+		width:100%;
+		border:none;
+		border-bottom: solid white 2px;
+	}
+	.top-content{
+	padding:1em;
+	}
+	.head-section{
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Img/rsz_backgroundpic.png);
+	background-size: cover;
+	font-family: poppins;
+	background-position: top;
+	}
+	.logo-box,.ul-container{
+		width:100%;
+		float:none;
+		text-align: center;
+		padding-bottom: 8px;
+	}
+	footer{
+		text-align: center;
+		background-color: black;
+		padding: 0 2em;
+	}
+	.footer-content h2{
+		font-size: 1.2rem;
+		letter-spacing: 0.112rem;
+		word-spacing: 0.122rem;
+	}
+	.footer-content p{
+		font-size: 0.9rem;
+	}
+	.footer-paragraph{
+		width:80%;
+		margin:auto;
+		padding-bottom: 0.7em;
+	}
+	.footer-content-four{
+		border:none;
+	}
+}
+/*Finished homepage of an ongoing website, these codes line-up are a bit defective, changes will be made soon*/
