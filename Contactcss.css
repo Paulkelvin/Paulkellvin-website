@@ -1,0 +1,219 @@
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin: 0;
+}
+body{
+	font-size: 1em;
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(Img/rsz_backgroundpic.png);
+	background-size: cover;
+	font-family: poppins;
+	background-position: top;
+}
+
+/*End of global*/
+
+
+/*Start*/
+.whole-container{
+	width:100%;
+	padding:2em;
+	position: relative;
+}
+
+header{
+	background-color: black;
+	padding-bottom: 1em;
+}
+.logo-box{
+	float: left;
+	margin-top:-0.47em;
+
+}
+.logo{
+	width: 3em;
+
+}
+.ul-container{
+	float: right;
+
+	top:-0.2em;
+}
+ul li a{
+	text-decoration: none;
+	color:white;
+}
+ul li{
+	display: inline;
+	margin: 0 1em;
+	list-style: none;
+	font-size: 0.8em;
+	padding:0.8em;
+	border-radius: 1em;
+	cursor:pointer;
+}
+ul li:link,:visited{
+	display: inline;
+	margin: 0 1em;
+	list-style: none;
+	font-size: 0.8em;
+}
+ul li:hover{
+	box-shadow:0 0.0613em 0.62em rgba(255, 255, 255, 0.5);
+	transform:translateY(-0.1857rem);
+
+}
+ul li:active{
+	transform:translateY(-0.0636);
+	box-shadow: 0 0.1236em 1.25em rgba(255, 255, 255, 0.5);
+}
+/*End of Header*/
+
+.content-container img{
+	width:16px;
+}
+.container{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4em 4em;
+	width:100%;
+}
+.container p{
+	color: white;
+}
+.contact-info a{
+	text-decoration: underline;
+	color: white;
+}
+.contact-info{
+	display:flex;
+	flex-basis: 45%;
+	flex-direction: column;
+	
+}
+.container .content-container{
+	padding: 1.1em 0;
+	display: flex;
+	position: relative;
+}
+.container .content-container .icon{
+	min-width:0.7em;
+	height:3.5em;
+	background-color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	padding: 0 1.2em;
+	margin-right: 1em;
+}
+.container .content-container .text p:first-child{
+	color:#b7ad5a;
+	font-weight: 700;
+}
+.contact-form{
+	background-color:#ffffff;
+	padding: 2em;
+	flex-basis: 38%;
+
+	max-height: 35em;
+}
+.contact-form .send-a-message{
+	text-decoration: capitalize;
+	font-weight: 500;
+}
+.contact-form .input-box{
+	position: relative;
+	margin-top: 1.7em;
+	width: 100%;
+}
+.contact-form .input-box input, textarea{
+	padding:0.3em 0;
+	width: 100%;
+	border: none;
+	outline: none;
+	border-bottom: 1.9px solid #000000;
+	resize: none;
+}
+.contact-form .input-box span{
+	position: absolute;
+	left: 0;
+	pointer-events: none;
+	font-size: 0.8rem;
+	padding:5px 0;
+	transition:0.6s;
+	-webkit-transition:0.6s;
+	-moz-transition:0.6s;
+	-ms-transition:0.6s;
+	-o-transition:0.6s;
+	color: #666;
+}
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:valid ~ span
+{
+	color:blue;
+	font-size: 0.75rem;
+	transform: translateY(-1.3em);
+	-webkit-transform: translateY(-1.3em);
+	-moz-transform: translateY(-1.3em);
+	-ms-transform: translateY(-1.3em);
+	-o-transform: translateY(-1.3em);
+}
+.contact-form .input-box button{
+	width: 5.25em;
+	background-color: #b7ad5a;
+	text-transform: uppercase;
+	outline: none;
+	border: none;
+	padding:0.7em;
+	font-weight: 700;
+	color: white;
+}
+.contact-form .input-box button:link, :visited{
+	width: 5.25em;
+	background-color: #b7ad5a;
+	text-transform: uppercase;
+	outline: none;
+	border: none;
+	padding:0.7em;
+	font-weight: 700;
+	color: white;
+}
+.contact-form .input-box button :active{
+	transform: translateY(-0.0636);
+	-webkit-transform: translateY(-0.0636);
+	-moz-transform: translateY(-0.0636);
+	-ms-transform: translateY(-0.0636);
+	-o-transform: translateY(-0.0636);
+	box-shadow: 0 0.1236em 1.25em rgba(0, 0, 0, 0.5);
+}
+@media only screen and (max-width: 50.25em){
+	:root{
+		font-size: 0.8em;
+	}
+	.logo-box,.ul-container{
+		width:100%;
+		float:none;
+		text-align: center;
+		padding-bottom: 8px;
+	}
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+	.container .contact-info{
+		margin-bottom: 2em;
+		width:100%;
+	}
+	.container .contact-form{
+		width:100%;
+	}
+}
