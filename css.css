@@ -27,7 +27,7 @@ header{
 }
 .logo-box{
 	float: left;
-	margin-top:-0.47em;
+	margin-top:-0.27em;
 
 }
 .logo{
@@ -67,7 +67,9 @@ ul li:active{
 	transform:translateY(-0.0636);
 	box-shadow: 0 0.1236em 1.25em rgba(255, 255, 255, 0.5);
 }
+
 /*End of Header*/
+
 .content-container{
 	padding-bottom: 12.3em;
 }
@@ -91,7 +93,9 @@ margin-top: 112px;
 	word-spacing: 0.11em;
 	font-weight: 500;
 }
+
 /*End of Section*/
+
 footer{
 	background-color: black;
 	padding: 0 2em;
@@ -101,14 +105,15 @@ footer{
 }
 .footer-image{
 	width:3em;
+	margin-bottom: 0.3em;
 }
 .footer-paragraph{
-	font-size: 0.6rem;
+	font-size: 0.61rem;
 	color: #d0d2dc;
-	margin-bottom: 1em;
+	margin-bottom: 0.2em;
 }
 .footer-content{
-	padding:1em 1em;
+	padding:1.8em 1em;
 	border-right: 2px solid #ffffff;
 	float:left;
 	width:25%;
@@ -116,13 +121,12 @@ footer{
 }
 .footer-content button{
 	font-size: 0.7rem;
-	
 	background-color: #b7ad5a;
 	color:#ffffff;
 	border-radius: 0.7em;
 	border: none;
 	outline:none;
-	padding:0.7em 1em;
+	padding:0.7em 0.6em;
 	cursor: pointer;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -139,6 +143,10 @@ footer{
 .footer-content button:hover{
 	transform:translateY(-0.1857rem);
 	box-shadow:  0 0.0613em 0.62em rgba(255, 255, 255, 0.5);
+	-webkit-transform:translateY(-0.1857rem);
+	-moz-transform:translateY(-0.1857rem);
+	-ms-transform:translateY(-0.1857rem);
+	-o-transform:translateY(-0.1857rem);
 }
 .footer-content button:active{
 	transform:translateY(-0.0636);
@@ -156,11 +164,11 @@ h2{
 }
 /*End of Footer*/
 
-/*Media queries*/
+/*Media queries for homepage*/
 
 @media only screen and (max-width: 900px){
 	:root{
-		font-size: 0.8em;
+		font-size: 10vh+0.9em;
 	}
 	body{
 		background-image:initial;
@@ -186,10 +194,16 @@ h2{
 		text-align: center;
 		padding-bottom: 8px;
 	}
+	.logo-box, .ul-container li{
+		padding: 0;
+	}
 	footer{
 		text-align: center;
 		background-color: black;
-		padding: 0 2em;
+		padding: 2em 2em;
+	}
+	.footer-image{
+		margin-bottom: 0.7em;
 	}
 	.footer-content h2{
 		font-size: 1.2rem;
@@ -199,6 +213,19 @@ h2{
 	.footer-content p{
 		font-size: 0.9rem;
 	}
+	.footer-content button{
+		font-size: 0.7rem;
+		background-color: #b7ad5a;
+		color:#ffffff;
+		border-radius: 0.7em;
+		border: none;
+		outline:none;
+		padding:0.7em 1em;
+		cursor: pointer;
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-top: 1.5em;
+	}
 	.footer-paragraph{
 		width:80%;
 		margin:auto;
@@ -207,5 +234,10 @@ h2{
 	.footer-content-four{
 		border:none;
 	}
+}
+
+@media only screen and (max-width: 400px){
+	
+
 }
 /*Finished homepage of an ongoing website, these codes line-up are a bit defective, changes will be made soon*/
