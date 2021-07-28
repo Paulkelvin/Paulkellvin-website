@@ -36,34 +36,41 @@ header{
 }
 .ul-container{
 	float: right;
-
 	top:-0.2em;
 }
 ul li a{
 	text-decoration: none;
 	color:white;
+	font-size: 0.8em;
+	margin:-3em;
+	padding: 0.8em;
+	border-radius: 1em;
+	border-radius: 1em;
+	cursor:pointer;
+	margin: 0 1em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	-ms-border-radius: 1em;
+	-o-border-radius: 1em;
 }
 ul li{
 	display: inline;
-	margin: 0 1em;
-	list-style: none;
-	font-size: 0.8em;
-	padding:0.8em;
 	border-radius: 1em;
-	cursor:pointer;
+	list-style: none;	
+	margin-right: -0.4em;
 }
-ul li:link,:visited{
+ul a:link,:visited{
 	display: inline;
 	margin: 0 1em;
 	list-style: none;
 	font-size: 0.8em;
 }
-ul li:hover{
+ul a:hover{
 	box-shadow:0 0.0613em 0.62em rgba(255, 255, 255, 0.5);
 	transform:translateY(-0.1857rem);
 
 }
-ul li:active{
+ul a:active{
 	transform:translateY(-0.0636);
 	box-shadow: 0 0.1236em 1.25em rgba(255, 255, 255, 0.5);
 }
@@ -119,6 +126,7 @@ footer{
 	width:25%;
 	
 }
+
 .footer-content button{
 	font-size: 0.7rem;
 	background-color: #b7ad5a;
@@ -174,11 +182,7 @@ h2{
 		background-image:initial;
 		background-color: none;
 	}
-	.footer-content{
-		width:100%;
-		border:none;
-		border-bottom: solid white 2px;
-	}
+	
 	.top-content{
 	padding:1em;
 	}
@@ -193,9 +197,11 @@ h2{
 		float:none;
 		text-align: center;
 		padding-bottom: 8px;
+
 	}
 	.logo-box, .ul-container li{
 		padding: 0;
+		font-size:0.7rem;
 	}
 	footer{
 		text-align: center;
@@ -204,6 +210,11 @@ h2{
 	}
 	.footer-image{
 		margin-bottom: 0.7em;
+	}
+	.footer-content{
+		width:100%;
+		border:none;
+		border-bottom: solid white 2px;
 	}
 	.footer-content h2{
 		font-size: 1.2rem;

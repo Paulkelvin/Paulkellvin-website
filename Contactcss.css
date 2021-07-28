@@ -36,37 +36,45 @@ header{
 }
 .ul-container{
 	float: right;
-
 	top:-0.2em;
 }
 ul li a{
 	text-decoration: none;
 	color:white;
+	font-size: 0.8em;
+	margin:-3em;
+	padding: 0.8em;
+	border-radius: 1em;
+	border-radius: 1em;
+	cursor:pointer;
+	margin: 0 1em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	-ms-border-radius: 1em;
+	-o-border-radius: 1em;
 }
 ul li{
 	display: inline;
-	margin: 0 1em;
-	list-style: none;
-	font-size: 0.8em;
-	padding:0.8em;
 	border-radius: 1em;
-	cursor:pointer;
+	list-style: none;	
+	margin-right: -0.4em;
 }
-ul li:link,:visited{
+ul a:link,:visited{
 	display: inline;
 	margin: 0 1em;
 	list-style: none;
 	font-size: 0.8em;
 }
-ul li:hover{
+ul a:hover{
 	box-shadow:0 0.0613em 0.62em rgba(255, 255, 255, 0.5);
 	transform:translateY(-0.1857rem);
 
 }
-ul li:active{
+ul a:active{
 	transform:translateY(-0.0636);
 	box-shadow: 0 0.1236em 1.25em rgba(255, 255, 255, 0.5);
 }
+
 /*End of Header*/
 
 .content-container img{
@@ -121,7 +129,6 @@ ul li:active{
 	background-color:#ffffff;
 	padding: 2em;
 	flex-basis: 38%;
-
 	max-height: 35em;
 }
 .contact-form .send-a-message{
@@ -141,23 +148,23 @@ ul li:active{
 	border-bottom: 1.9px solid #000000;
 	resize: none;
 }
-.contact-form .input-box span{
+.contact-form .input-box label{
 	position: absolute;
 	left: 0;
 	pointer-events: none;
 	font-size: 0.8rem;
 	padding:5px 0;
-	transition:0.6s;
-	-webkit-transition:0.6s;
-	-moz-transition:0.6s;
-	-ms-transition:0.6s;
-	-o-transition:0.6s;
+	transition:0.5s;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
 	color: #666;
 }
-.contact-form .input-box input:focus ~ span,
-.contact-form .input-box input:valid ~ span,
-.contact-form .input-box textarea:focus ~ span,
-.contact-form .input-box textarea:valid ~ span
+.contact-form .input-box input:focus ~ label,
+.contact-form .input-box input:valid ~ label,
+.contact-form .input-box textarea:focus ~ label,
+.contact-form .input-box textarea:valid ~ label
 {
 	color:blue;
 	font-size: 0.75rem;
@@ -177,7 +184,7 @@ ul li:active{
 	font-weight: 700;
 	color: white;
 }
-.contact-form .input-box button:link, :visited{
+/* .contact-form .input-box button:link, :visited{
 	width: 5.25em;
 	background-color: #b7ad5a;
 	text-transform: uppercase;
@@ -194,7 +201,7 @@ ul li:active{
 	-ms-transform: translateY(-0.0636);
 	-o-transform: translateY(-0.0636);
 	box-shadow: 0 0.1236em 1.25em rgba(0, 0, 0, 0.5);
-}
+} */
 @media only screen and (max-width: 50.25em){
 	:root{
 		font-size: 0.8em;
@@ -203,7 +210,12 @@ ul li:active{
 		width:100%;
 		float:none;
 		text-align: center;
-		padding-bottom: 8px;
+		padding-bottom: 10px;
+		padding-top: 5px;
+	}
+	.logo-box, .ul-container li{
+		padding: 0;
+		font-size:0.9rem;
 	}
 	.container{
 		display: flex;
