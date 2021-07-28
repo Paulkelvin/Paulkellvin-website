@@ -18,7 +18,6 @@ body{
 	padding:2em;
 	position: relative;
 }
-
 header{
 	background-color: black;
 	padding-bottom: 1em;
@@ -26,11 +25,9 @@ header{
 .logo-box{
 	float: left;
 	margin-top:-0.47em;
-
 }
 .logo{
 	width: 3em;
-
 }
 ul li a{
 	text-decoration: none;
@@ -50,8 +47,7 @@ ul li a{
 ul li{
 	display: inline;
 	border-radius: 1em;
-	list-style: none;	
-
+	list-style: none;
 	float:right;
 }
 ul a:link,:visited{
@@ -106,17 +102,21 @@ ul a:active{
 	.logo-box,.ul-container{
 		width:100%;
 		float:none;
-		text-align: center;
 		padding-bottom: 10px;
 		padding-top: 5px;
+		text-align: center;
 	}
 	.logo-box, .ul-container li{
 		padding: 0;
-		font-size:0.9rem;
+		text-align: center;
+		padding: 0;
+		font-size:0.8rem;
+		float:none;
 	}
-	li+li{
-		margin-left:-1em;
+	li + li {
+		margin-left: -1.2em;
 	}
+
 }
 
 @media only screen and (max-width:33em){
@@ -127,14 +127,14 @@ ul a:active{
 	}
 }
 @media only screen and (max-width:20em){
+	.ul-container{
+		text-align: center;
+	}
 	li+li{
 		margin-left:-1em;
 	}
 	li{
 		font-size: 0.5em;
 	}
-	.logo-box, .ul-container li{
-		padding: 0;
-		font-size:0.5rem;
-	}
+
 }
