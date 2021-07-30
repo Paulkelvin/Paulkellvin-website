@@ -179,19 +179,22 @@ h2{
 		font-size: 10vh+0.9em;
 	}
 	body{
-		background-image:none;
+		background-image: (rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://bit.ly/3yi2gaI);
+		background-size: cover;
+		font-family: poppins;
+		background-position: top;
 		background-color: none;
 	}
 	
 	.top-content{
 	padding:1em;
 	}
-	.head-section{
+/* 	.head-section{
 	background-image: (rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://bit.ly/3yi2gaI);
 	background-size: cover;
 	font-family: poppins;
 	background-position: top;
-	}
+	} */
 	.logo-box,.ul-container{
 		width:100%;
 		float:none;
