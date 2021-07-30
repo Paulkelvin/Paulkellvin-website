@@ -187,7 +187,7 @@ h2{
 	padding:1em;
 	}
 	.head-section{
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://bit.ly/3yi2gaI);
+	background-image: url(https://bit.ly/3yi2gaI);
 	background-size: cover;
 	font-family: poppins;
 	background-position: top;
