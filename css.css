@@ -5,7 +5,7 @@
 }
 body{
 	font-size: 1em;
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://bit.ly/3yi2gaI);
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://drive.google.com/file/d/1OU4gjMRbtKpKe21v8w49s886ymhCUuo5/view?usp=sharing);
 	background-size: cover;
 	font-family: poppins;
 	background-position: top;
@@ -177,24 +177,22 @@ h2{
 @media only screen and (max-width: 900px){
 	:root{
 		font-size: 10vh+0.9em;
-	}
 	body{
-		background-image: (rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://bit.ly/3yi2gaI);
-		background-size: cover;
-		font-family: poppins;
-		background-position: top;
+		background-image:initial;
 		background-color: none;
 	}
 	
 	.top-content{
 	padding:1em;
 	}
+		
 	.head-section{
-	background-image: (rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://bit.ly/3yi2gaI);
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://drive.google.com/file/d/1OU4gjMRbtKpKe21v8w49s886ymhCUuo5/view?usp=sharing);
 	background-size: cover;
 	font-family: poppins;
 	background-position: top;
 	}
+		
 	.logo-box,.ul-container{
 		width:100%;
 		float:none;
