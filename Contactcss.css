@@ -80,6 +80,12 @@ ul a:active{
 .content-container img{
 	width:16px;
 }
+.content-container .call-icon{
+	width:48px;
+}
+.content-container .location-icon{
+	width:48px;
+}
 .container{
 	position: relative;
 	display: flex;
