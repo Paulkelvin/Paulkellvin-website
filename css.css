@@ -5,7 +5,7 @@
 }
 body{
 	font-size: 1em;
-	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://scontent.fist7-1.fna.fbcdn.net/v/t1.6435-9/s600x600/221919149_4194146094008979_1732949714346671913_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=730e14&_nc_eui2=AeGsLjepJcaQGBIgkyBAEVkrCV-idMlyTeYJX6J0yXJN5vzDFeggHu-21KIumpfFEC7_cNrNeSw5Rbg6asvffdUl&_nc_ohc=bUaQBp-RmhQAX-6EoxP&_nc_ht=scontent.fist7-1.fna&oh=fd2f1156d0269bb04384278f143ad92d&oe=612BABED);
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(backgroundpic.png);
 	background-size: cover;
 	font-family: poppins;
 	background-position: top;
